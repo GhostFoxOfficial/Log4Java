@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_short_name">MJLauncher</string>
+    <string name="app_short_name">Log4Java</string>
 
     <!-- Action bar part -->
 
@@ -21,7 +21,7 @@
     <string name="alerttitle_installmod">Select a mod installer</string>
 
     <!-- Error messages -->
-    <string name="error_fatal">MJLauncher has unexpectedly crashed</string>
+    <string name="error_fatal">Log4Java has unexpectedly crashed</string>
     <string name="error_no_version">No version!</string>
     <string name="error_show_more">Show more</string>
     <string name="error_show_less">Show less</string>
@@ -34,7 +34,7 @@
     -->
 
     <!-- MCLauncherActivity: Tabs -->
-    <string name="mcl_tab_wiki">Wiki</string>
+    <string name="mcl_tab_wiki">Wiki soon</string>
 
     <!-- MCLauncherActivity: Account status -->
 
@@ -98,22 +98,22 @@
     <string name="mcn_check_fail_vulkan_support">Zink (Vulkan) renderer is not supported on this device!</string>
 
     <!-- MainActivity: Control buttons -->
-    <string name="control_chat">Chat</string>
-    <string name="control_debug">Debug</string>
-    <string name="control_primary">Pri</string>
-    <string name="control_secondary">Sec</string>
+    <string name="control_chat">CHAT</string>
+    <string name="control_debug">DEBUG</string>
+    <string name="control_primary">PRI</string>
+    <string name="control_secondary">SEC</string>
     <string name="control_shift">◇</string>
-    <string name="control_inventory">Inv</string>
+    <string name="control_inventory">INV</string>
     <string name="control_up">▲</string>
     <string name="control_left">◀</string>
     <string name="control_right">▶</string>
     <string name="control_down">▼</string>
     <string name="control_jump">⬛</string>
-    <string name="control_thirdperson">3rd</string>
-    <string name="control_listplayers">Tab</string>
-    <string name="control_mouse">Mouse</string>
-    <string name="control_mouseoff">Mouse: off</string>
-    <string name="control_mouseon">Mouse: on </string>
+    <string name="control_thirdperson">3RD</string>
+    <string name="control_listplayers">TAB</string>
+    <string name="control_mouse">MOUSE</string>
+    <string name="control_mouseoff">MOUSE: OFF</string>
+    <string name="control_mouseon">MOUSE: ON </string>
 
     <!-- MainActivity: Menu advanced controls -->
     <string name="control_forceclose">Force close</string>
