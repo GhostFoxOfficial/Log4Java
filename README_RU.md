@@ -1,20 +1,20 @@
-<H1 align="center">MojoLauncher (также известный как MJLauncher)</H1>
+<H1 align="center">Log4Java</H1>
 
 <a href="./README.md">Readme in English</a>
 
 <img src="./app_pojavlauncher/src/main/assets/pojavlauncher.png" align="left" width="150" height="150" alt="MojoLauncher logo">
 
-[![Android CI](https://github.com/MojoLauncher/MojoLauncher/workflows/Android%20CI/badge.svg)](https://github.com/MojoLauncher/MojoLauncher/actions)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/MojoLauncher/MojoLauncher)](https://github.com/MojoLauncher/MojoLauncher/actions)
+[![Android CI](https://github.com/SprinklekitOfficial/Log4Java/workflows/Android%20CI/badge.svg)](https://github.com/SprinklekitOfficial/Log4Java/actions)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/MojoLauncher/MojoLauncher)](https://github.com/SprinklekitOfficial/Log4Java/actions)
 [![Discord](https://img.shields.io/discord/1365346109131722753.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/VHdwQFsaGX)
 
-* MojoLauncher это лаунчер, основанный на [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher), позволяющий играть в Minecraft: Java Edition на устройствах Android!
+* Log4Java это лаунчер, основанный на [MojoLauncher](https://github.com/MojoLauncher/MojoLauncher), позволяющий играть в Minecraft: Java Edition на устройствах Android!
 
-* Он может запускать почти любую версию Minecraft, позволяя устанваливать через .jar загрузчики модов такие как [Forge](https://files.minecraftforge.net/) и [Fabric](http://fabricmc.net/), и моды по типу [OptiFine](https://optifine.net).
+* Он может запускать любую версию Minecraft, позволяя устанваливать через .jar загрузчики модов такие как [Forge](https://files.minecraftforge.net/) и [Fabric](http://fabricmc.net/), и моды по типу [OptiFine](https://optifine.net).
 
 ## Навигация
 - [Введение](#introduction)
-- [Как получить MojoLauncher](#getting-mojolauncher)
+- [Как получить Log4Java](#getting-mojolauncher)
 - [Сборка](#building) 
 - [Текущие планы](#current-roadmap) 
 - [Лицензия](#license) 
@@ -22,20 +22,17 @@
 - [Благодарности & Сторонние компоненты и их лицензии](#credits--third-party-components-and-their-licenses-if-available)
 
 ## Введение 
-* MojoLauncher это лаунчер Minecraft: Java Edition для Android основанный на [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher)
-* Лаунчер может запускать почти все доступные версии Minecraft в диапазоне от rd-132211 до снапшотов 26.x (включая версии Combat Test). 
+* Log4Java это лаунчер Minecraft: Java Edition для Android основанный на [MojoLauncher](https://github.com/MojoLauncher/MojoLauncher)
+* Лаунчер может запускать все доступные версии Minecraft в диапазоне от rd-132211 до снапшотов 26.x (включая версии Combat Test). 
 * Моддинг через Forge и Fabric так же поддерживается. 
 
-## Как получить MojoLauncher
+## Как получить Log4Java
 
-Получить копию MojoLauncher можно четырьмя способами:
+Получить копию Log4Java можно четырьмя способами:
 
-1. Можно скачать готовый билд с раздела [релизов](http://github.com/mojolauncher/mojolauncher/releases).
+1. Можно скачать готовый билд с раздела [релизов](http://github.com/SprinklekitOfficial/Log4Java/releases).
 
-2. Можно скачать с Google Play нажав на кнопку ниже:
-[![Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=git.artdeell.mjlaunch)
-
-3. Можно скачать с ранние билды с [Github Actions](http://github.com/mojolauncher/mojolauncher/actions).
+2. Можно скачать с ранние билды с [Github Actions](http://github.com/mojolauncher/mojolauncher/actions).
 
 4. Можно [собрать](#building) с исходного кода.
 ## Сборка  
@@ -62,7 +59,7 @@
 - Скорее всего есть ещё, поэтому у нас есть баг-трекер ;) 
 
 ## Лицензия
-- MojoLauncher лицензирован под [GNU LGPLv3](https://github.com/MojoLauncher/MojoLauncher/blob/v3_openjdk/LICENSE).
+- Log4Java лицензирован под [GNU LGPLv3](https://github.com/MojoLauncher/MojoLauncher/blob/v3_openjdk/LICENSE).
 
 ## Внести свой вклад в проект
 Мы привествуем желающих внести свой вклад в проект! Нам не помешает любая помощь, не только код. Например, вы можете помочь в разработке и формировании вики. Вы так же можете помочь [перевести проект](https://crowdin.com/project/pojavlauncher) на ваш язык!
