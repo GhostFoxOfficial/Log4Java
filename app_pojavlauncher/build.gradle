@@ -50,7 +50,7 @@ configurations {
 }
 
 android {
-    namespace 'git.artdeell.mojo'
+    namespace 'git.sprinklekit.log4java'
 
     compileSdk = 36
 
@@ -80,7 +80,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "git.artdeell.mjlaunch"
+        applicationId "git.sprinklekit.log4java"
         minSdkVersion 21
         targetSdkVersion 36
         versionCode getDateSeconds()
