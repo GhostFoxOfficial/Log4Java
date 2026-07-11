@@ -27,8 +27,9 @@ jobs:
         run: |
           mkdir -p out
           
+          
           ./gradlew :app_pojavlauncher:assembleFullRelease \
-            -Pandroid.injected.signing.store.file= \
+            -Pandroid.injected.signing.store.file=$GITHUB_WORKSPACE/app_pojavlauncher/mojo_release_next.jks \
             -Pandroid.injected.signing.store.password=android \
             -Pandroid.injected.signing.key.alias=androiddebugkey \
             -Pandroid.injected.signing.key.password=android
