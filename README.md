@@ -1,4 +1,4 @@
-<H1 align="center">MojoLauncher (a.k.a. MJLauncher)</H1>
+<H1 align="center">Log4Java</H1>
 
 <a href="./README_RU.md">Readme на русском</a>
 
@@ -8,13 +8,13 @@
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/MojoLauncher/MojoLauncher)](https://github.com/MojoLauncher/MojoLauncher/actions)
 [![Discord](https://img.shields.io/discord/1365346109131722753.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/VHdwQFsaGX)
 
-* MojoLauncher is a launcher, based on [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher), that allows you to play Minecraft: Java Edition on your Android device!
+* Log4Java is a launcher, based on [MojoLauncher](https://github.com/MojoLauncher/MojoLauncher), that allows you to play Minecraft: Java Edition on your Android device!
 
-* It can run almost every version of Minecraft, allowing you to use .jar only installers to install modloaders such as [Forge](https://files.minecraftforge.net/) and [Fabric](http://fabricmc.net/) and mods like [OptiFine](https://optifine.net).
+* It can run every version of Minecraft, allowing you to use .jar only installers to install modloaders such as [Forge](https://files.minecraftforge.net/) and [Fabric](http://fabricmc.net/) and mods like [OptiFine](https://optifine.net).
 
 ## Navigation
 - [Introduction](#introduction)
-- [Getting MojoLauncher](#getting-mojolauncher)
+- [Getting Log4Java](#getting-mojolauncher)
 - [Building](#building) 
 - [Current roadmap](#current-roadmap) 
 - [License](#license) 
@@ -22,20 +22,17 @@
 - [Credits & Third party components and their licenses](#credits--third-party-components-and-their-licenses-if-available)
 
 ## Introduction 
-* MojoLauncher is a Minecraft: Java Edition launcher for Android based on [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher)
-* This launcher can launch almost all available Minecraft versions ranging from rd-132211 to 26.x snapshots (including Combat Test versions). 
+* Log4Java is a Minecraft: Java Edition launcher for Android based on [MojoLauncher](https://github.com/MojoLauncher/MojoLauncher)
+* This launcher can launch all available Minecraft versions ranging from rd-132211 to 26.x snapshots (including Combat Test versions). 
 * Modding via Forge and Fabric are also supported. 
 
-## Getting MojoLauncher
+## Getting Log4Java
 
-You can get MojoLauncher via four methods:
+You can get Log4Java via four methods:
 
-1. You can get the prebuilt app from the [releases section](http://github.com/mojolauncher/mojolauncher/releases).
+1. You can get the prebuilt app from the [releases section](http://github.com/SprinklekitOfficial/Log4Java/releases).
 
-2. You can get it from Google Play by clicking on this badge:
-[![Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=git.artdeell.mjlaunch)
-
-3. You can get early builds from [Github Actions](http://github.com/mojolauncher/mojolauncher/actions).
+2. You can get early builds from [Github Actions](http://github.com/SprinklekitOfficial/Log4Java/actions).
 
 4. You can [build](#building) from source.
 ## Building   
@@ -62,7 +59,7 @@ You can get MojoLauncher via four methods:
 - Probably more, that's why we have a bug tracker ;) 
 
 ## License
-- MojoLauncher is licensed under [GNU LGPLv3](https://github.com/MojoLauncher/MojoLauncher/blob/v3_openjdk/LICENSE).
+- Log4Java is licensed under [GNU LGPLv3](https://github.com/MojoLauncher/MojoLauncher/blob/v3_openjdk/LICENSE).
 
 ## Contributing
 Contributions are welcome! We welcome any type of contribution, not only code. For example, you can help the wiki shape up. You can help the [translation](https://crowdin.com/project/pojavlauncher) too!
