@@ -42,6 +42,6 @@ jobs:
       - name: Upload Release APK
         uses: actions/upload-artifact@v4
         with:
-          name: log4java-release
-          path: app_pojavlauncher/build/outputs/apk/release/*.apk
+          name: app-release-package
+          path: app_pojavlauncher/build/outputs/apk/full/release/*.apk
           
