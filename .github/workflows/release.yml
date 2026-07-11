@@ -26,8 +26,8 @@ jobs:
       - name: Build Launcher Release
         run: |
           mkdir -p out
-          ./gradlew :app_pojavlauncher:assembleFullRelease
-          mv app/build/outputs/apk/full/release/app-full-release-unsigned.apk out/app-release-full.apk
+          ./gradlew :app_pojavlauncher:assembleFullRelease -Pandroid.injected.signing.store.file=$HOME/.android/debug.keystore -Pandroid.injected.signing.store.password=android -Pandroid.injected.signing.key.alias=androiddebugkey -Pandroid.injected.signing.key.password=android
+          mv app_pojavlauncher/build/outputs/apk/full/release/app_log4java-full-release.apk out/app-release-full.apk
           
       - name: Upload Release APK
         uses: actions/upload-artifact@v4
