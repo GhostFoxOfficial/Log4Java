@@ -27,7 +27,7 @@ jobs:
         run: |
           mkdir -p out
           ./gradlew :app_pojavlauncher:assembleFullRelease
-          mv app_pojavlauncher/build/outputs/apk/full/release/app-release-full.apk out/app-release-full.apk
+          mv app/build/outputs/apk/full/release/app-full-release-unsigned.apk out/app-release-full.apk
           
       - name: Upload Release APK
         uses: actions/upload-artifact@v4
