@@ -50,7 +50,7 @@ configurations {
 }
 
 android {
-    namespace 'git.sprinklekit.log4java'
+    namespace 'git.artdeell.mojo'
 
     compileSdk = 36
 
