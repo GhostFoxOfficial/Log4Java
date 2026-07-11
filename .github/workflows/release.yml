@@ -21,22 +21,23 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: "8.14.3"
+          gradle-version: "8.10.2"
 
       - name: Build Launcher Release
         run: |
           mkdir -p out
           
           ./gradlew :app_pojavlauncher:assembleFullRelease \
-            -Pandroid.injected.signing.store.file=$GITHUB_WORKSPACE/app_pojavlauncher/mojo_release_next.jks \
+            -Pandroid.injected.signing.store.file= \
             -Pandroid.injected.signing.store.password=android \
-            -Pandroid.injected.signing.key.alias=mojo \
+            -Pandroid.injected.signing.key.alias=androiddebugkey \
             -Pandroid.injected.signing.key.password=android
           
-          mv app_pojavlauncher/build/outputs/apk/full/release/app_log4java-full-release.apk out/app-release-full.apk
-          
+          cp app_pojavlauncher/build/outputs/apk/full/release/app_log4java-release-full.apk out/app-release-full.apk
+
       - name: Upload Release APK
         uses: actions/upload-artifact@v4
         with:
           name: app-release-package
           path: out/app-release-full.apk
+          
