@@ -28,7 +28,7 @@ jobs:
         env:
           ENCODED_STRING: ${{ secrets.KEYSTORE_BASE64 }}
         run: |
-          echo "$ENCODED_STRING" | base64 --decode > app/release.keystore
+          echo "$ENCODED_STRING" | base64 --decode > app_pojavlauncher/mojo_release_next.jks
 
       - name: Build Release APK
         env:
