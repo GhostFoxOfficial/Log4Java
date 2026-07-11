@@ -26,7 +26,13 @@ jobs:
       - name: Build Launcher Release
         run: |
           mkdir -p out
-          ./gradlew :app_pojavlauncher:assembleFullRelease -Pandroid.injected.signing.store.file=$HOME/.android/debug.keystore -Pandroid.injected.signing.store.password=android -Pandroid.injected.signing.key.alias=androiddebugkey -Pandroid.injected.signing.key.password=android
+          
+          ./gradlew :app_pojavlauncher:assembleFullRelease \
+            -Pandroid.injected.signing.store.file=$GITHUB_WORKSPACE/app_pojavlauncher/mojo_release_next.jks \
+            -Pandroid.injected.signing.store.password=android \
+            -Pandroid.injected.signing.key.alias=mojo \
+            -Pandroid.injected.signing.key.password=android
+          
           mv app_pojavlauncher/build/outputs/apk/full/release/app_log4java-full-release.apk out/app-release-full.apk
           
       - name: Upload Release APK
