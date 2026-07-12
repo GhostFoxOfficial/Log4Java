@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_short_name">MJLauncher</string>
+    <string name="app_short_name">Log4Java</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -81,22 +81,22 @@
     <string name="mcn_exit_confirm">Вы уверены, что хотите принудительно завершить игру?</string>
     <string name="mcn_check_fail_vulkan_support">Визуализатор Zink (Vulkan) не поддерживается на вашем устройстве.</string>
     <!-- MainActivity: Control buttons -->
-    <string name="control_chat">Чат</string>
-    <string name="control_debug">Отладка</string>
+    <string name="control_chat">ЧАТ</string>
+    <string name="control_debug">ОТКЛАДКА</string>
     <string name="control_primary">ЛКМ</string>
     <string name="control_secondary">ПКМ</string>
     <string name="control_shift">◇</string>
-    <string name="control_inventory">Инв</string>
+    <string name="control_inventory">ИНВ</string>
     <string name="control_up">▲</string>
     <string name="control_left">◀</string>
     <string name="control_right">▶</string>
     <string name="control_down">▼</string>
     <string name="control_jump">⬛</string>
     <string name="control_thirdperson">F5</string>
-    <string name="control_listplayers">Tab</string>
-    <string name="control_mouse">Мышь</string>
-    <string name="control_mouseoff">Мышь: Выкл</string>
-    <string name="control_mouseon">Мышь: Вкл </string>
+    <string name="control_listplayers">TAB</string>
+    <string name="control_mouse">МЫШЬ</string>
+    <string name="control_mouseoff">МЫШЬ: ВЫКЛ</string>
+    <string name="control_mouseon">Мышь: ВКЛ </string>
     <!-- MainActivity: Menu advanced controls -->
     <string name="control_forceclose">Завершить процесс</string>
     <string name="control_viewout">Журнал</string>
