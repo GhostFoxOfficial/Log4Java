@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_short_name">MJLauncher</string>
+    <string name="app_short_name">Log4Java</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -13,7 +13,7 @@
     <!-- AlertDialog title -->
     <string name="alerttitle_installmod">選擇模組安裝程式</string>
     <!-- Error messages -->
-    <string name="error_fatal">MJLauncher 非預期的崩潰</string>
+    <string name="error_fatal">Log4Java 非預期的崩潰</string>
     <string name="error_no_version">沒有版本！</string>
     <string name="error_show_more">顯示更多</string>
     <string name="error_show_less">顯示較少</string>
@@ -90,7 +90,7 @@
     <string name="control_down">▼</string>
     <string name="control_jump">⬛</string>
     <string name="control_thirdperson">視角</string>
-    <string name="control_listplayers">Tab</string>
+    <string name="control_listplayers">制表</string>
     <string name="control_mouse">滑鼠</string>
     <string name="control_mouseoff">滑鼠：關閉</string>
     <string name="control_mouseon">滑鼠：開啟</string>
