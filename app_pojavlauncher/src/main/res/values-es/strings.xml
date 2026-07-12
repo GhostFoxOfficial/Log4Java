@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_short_name">MJLauncher</string>
+    <string name="app_short_name">Log4Java</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -13,7 +13,7 @@
     <!-- AlertDialog title -->
     <string name="alerttitle_installmod">Seleccione un instalador de modificaciones</string>
     <!-- Error messages -->
-    <string name="error_fatal">MJLauncher se ha detenido de forma inesperada</string>
+    <string name="error_fatal">Log4Java se ha detenido de forma inesperada</string>
     <string name="error_no_version">¡No hay versiones!</string>
     <string name="error_show_more">Mostrar más</string>
     <string name="error_show_less">Mostrar menos</string>
