@@ -43,4 +43,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: app-release-package
-          path: app_pojavlauncher/build/outputs/apk/full/release/app_log4java-full-release-unsigned.apk
+          path: app_pojavlauncher/build/outputs/apk/full/release/*.apk
