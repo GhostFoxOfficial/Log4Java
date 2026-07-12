@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_short_name">MJLauncher</string>
+    <string name="app_short_name">Log4Java</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -14,7 +14,7 @@
     <!-- AlertDialog title -->
     <string name="alerttitle_installmod">Wähle einen Mod-Installer</string>
     <!-- Error messages -->
-    <string name="error_fatal">MJLauncher ist unerwartet abgestürzt</string>
+    <string name="error_fatal">Log4Java ist unerwartet abgestürzt</string>
     <string name="error_no_version">Keine Version!</string>
     <string name="error_show_more">Mehr anzeigen</string>
     <string name="error_show_less">Weniger anzeigen</string>
@@ -79,22 +79,22 @@
     <string name="mcn_exit_confirm">Beenden wirklich erzwingen?</string>
     <string name="mcn_check_fail_vulkan_support">Der Zink-Renderer (Vulkan) wird auf diesem Gerät nicht unterstützt!</string>
     <!-- MainActivity: Control buttons -->
-    <string name="control_chat">Chat</string>
-    <string name="control_debug">Debug</string>
-    <string name="control_primary">Pri</string>
-    <string name="control_secondary">Sek</string>
+    <string name="control_chat">CHAT</string>
+    <string name="control_debug">DEBUG</string>
+    <string name="control_primary">PRI</string>
+    <string name="control_secondary">SEK</string>
     <string name="control_shift">◇</string>
-    <string name="control_inventory">Inv</string>
+    <string name="control_inventory">INV</string>
     <string name="control_up">▲</string>
     <string name="control_left">◀</string>
     <string name="control_right">▶</string>
     <string name="control_down">▼</string>
     <string name="control_jump">⬛</string>
     <string name="control_thirdperson">3. Person</string>
-    <string name="control_listplayers">Tab</string>
-    <string name="control_mouse">Maus</string>
-    <string name="control_mouseoff">Maus: Aus</string>
-    <string name="control_mouseon">Maus: An </string>
+    <string name="control_listplayers">TAB</string>
+    <string name="control_mouse">MAUS</string>
+    <string name="control_mouseoff">MAUS: AUS</string>
+    <string name="control_mouseon">MAUS: AN </string>
     <!-- MainActivity: Menu advanced controls -->
     <string name="control_forceclose">Beenden erzwingen</string>
     <string name="control_viewout">Protokoll-Ausgabe</string>
