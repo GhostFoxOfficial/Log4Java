@@ -311,7 +311,7 @@
     <string name="preference_category_miscellaneous">其他設定</string>
     <string name="preference_category_video">顯示設定</string>
     <string name="notification_permission_dialog_title">權限要求</string>
-    <string name="notification_permission_dialog_text">MJLauncher 需要通知權限，以防止你離開應用程式時，遊戲/模組包的下載停止。如果沒有這個權限，當你將 MJLauncher 置於背景模式時，Android 可能會停止你的下載內容。</string>
+    <string name="notification_permission_dialog_text">Log4Java 需要通知權限，以防止你離開應用程式時，遊戲/模組包的下載停止。如果沒有這個權限，當你將 MJLauncher 置於背景模式時，Android 可能會停止你的下載內容。</string>
     <string name="notification_permission_toast">你隨時可以進入設定變更你的決定。</string>
     <string name="preference_ask_for_notification_title">允許通知</string>
     <string name="preference_ask_for_notification_description">按一下重新請求通知權限，這是遊戲/模組包背景下載正常運作所必需的。</string>
