@@ -230,7 +230,7 @@ public class MainActivity extends BaseActivity implements ControlButtonMenuListe
             String version = extras.getString(INTENT_LAUNCH_VERSION);
             File[] classpath = (File[]) extras.getSerializable(INTENT_LAUNCH_CLASSPATH);
 
-            setTitle("MojoLauncher (" + version + ")");
+            setTitle("Log4Java (" + version + ")");
 
             // Menu
             gameActionArrayAdapter = new ArrayAdapter<>(this,
