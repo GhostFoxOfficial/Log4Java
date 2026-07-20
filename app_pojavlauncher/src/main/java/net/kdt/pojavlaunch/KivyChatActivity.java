@@ -5,7 +5,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import androidx.appcompat.app.AppCompatActivity;
-import android.content.res.Resources;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 public class KivyChatActivity extends AppCompatActivity {
 
@@ -16,13 +17,27 @@ public class KivyChatActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         
-        String packageName = getPackageName();
-        int layoutId = getResources().getIdentifier("activity_kivy_chat", "layout", packageName);
-        setContentView(layoutId);
+        LinearLayout mainLayout = new LinearLayout(this);
+        mainLayout.setOrientation(LinearLayout.VERTICAL);
+        mainLayout.setBackgroundColor(android.graphics.Color.parseColor("#111111"));
+        
+        ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.MATCH_PARENT
+        );
+        mainLayout.setLayoutParams(layoutParams);
 
         
-        int webViewId = getResources().getIdentifier("kivy_webview", "id", packageName);
-        mWebView = findViewById(webViewId);
+        mWebView = new WebView(this);
+        LinearLayout.LayoutParams webViewParams = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.MATCH_PARENT
+        );
+        mWebView.setLayoutParams(webViewParams);
+
+        
+        mainLayout.addWidget(mWebView);
+        setContentView(mainLayout);
 
         
         WebSettings webSettings = mWebView.getSettings();
