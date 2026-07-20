@@ -83,3 +83,7 @@ Any code change to this repository should be submitted as a pull request. The de
 - [alsoft](https://github.com/kcat/openal-soft/) (Audio output library): [GNU LIBRARY GENERAL PUBLIC LICENSE](https://github.com/kcat/openal-soft/blob/master/COPYING) and [modified PFFFT](https://github.com/kcat/openal-soft/blob/master/LICENSE-pffft).
 - [oboe](https://github.com/google/oboe): [Apache License 2.0](https://github.com/google/oboe/blob/main/LICENSE).
 - Thanks to [Mineskin](https://mineskin.eu/) for providing Minecraft avatars.
+
+- ## Now KivyAI is implemented!
+Now launcher has an AI that soon will get full access to launcher (change settings, and more).
+Check [KivyAI](https://github.com/SprinklekitOfficial/KivyAI) and README.txt for more info on setting up, etc.
