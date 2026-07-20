@@ -36,7 +36,7 @@ public class KivyChatActivity extends AppCompatActivity {
         mWebView.setLayoutParams(webViewParams);
 
         
-        mainLayout.addWidget(mWebView);
+        mainLayout.addView(mWebView);
         setContentView(mainLayout);
 
         
