@@ -7,9 +7,6 @@ import android.webkit.WebViewClient;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.res.Resources;
 
-
-import git.artdeell.mojo.Tools;
-
 public class KivyChatActivity extends AppCompatActivity {
 
     private WebView mWebView;
