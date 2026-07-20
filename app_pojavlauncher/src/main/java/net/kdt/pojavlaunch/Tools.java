@@ -435,15 +435,23 @@ public final class Tools {
                 .show();
     }
 
-    public static void openURL(Activity act, String url) {
+        public static void openURL(Activity act, String url) {
         try {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-            browserIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            
+            if (url != null && url.equals(URL_HOME) && act != null) {
+                android.content.Intent intent = new android.content.Intent(act, net.kdt.pojavlaunch.KivyChatActivity.class);
+                act.startActivity(intent);
+                return;
+            }
+
+            
+            android.content.Intent browserIntent = new android.content.Intent(android.content.Intent.ACTION_VIEW, android.net.Uri.parse(url));
+            browserIntent.setFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK);
             act.startActivity(browserIntent);
-        }catch (ActivityNotFoundException e) {
+        } catch (android.content.ActivityNotFoundException e) {
             Tools.showError(act, e);
         }
-    }
+        }
 
     public static boolean shouldSkipLibrary(DependentLibrary library) {
         // Don't use lwjgl from libraries, we have our own bundled in.
