@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.res.Resources;
 
 
-import t.artdeell.mojo;
+import git.artdeell.mojo.Tools;
 
 public class KivyChatActivity extends AppCompatActivity {
 
