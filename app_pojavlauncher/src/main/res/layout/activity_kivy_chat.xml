@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.http://schemas.http://schemas.http://schemas.http://schemas.http://schemas.http://schemas.http://schemas.http://schemas.http://linearlayout"
+<LinearLayout xmlns:android="http://android.com"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#111111">
 
-    <!-- The browser component -->
-    <webkit.WebView
+    <!-- Fixed webkit -->
+    <WebView
         android:id="@+id/kivy_webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
