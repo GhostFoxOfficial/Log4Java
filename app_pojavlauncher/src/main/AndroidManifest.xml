@@ -132,6 +132,12 @@
             <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
                 android:value="This application is intended to run a 3rd-party piece of software which cannot be managed using the activity's saved instance state. This service is used for background persistence of this piece of software."/>
         </service>
+
+        <activity 
+    android:name="net.kdt.pojavlaunch.KivyChatActivity"
+    android:theme="@style/Theme.AppCompat.NoActionBar" 
+    android:screenOrientation="portrait" />
+        
     </application>
     <queries>
         <package android:name="git.mojo.ffmpeg"/>
