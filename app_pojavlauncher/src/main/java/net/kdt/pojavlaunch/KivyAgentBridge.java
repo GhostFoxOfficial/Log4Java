@@ -1,4 +1,4 @@
-package t.artdeell.mojo.utils;
+package net.kdt.pojavlaunch;
 
 import android.content.Context;
 import android.webkit.JavascriptInterface;
