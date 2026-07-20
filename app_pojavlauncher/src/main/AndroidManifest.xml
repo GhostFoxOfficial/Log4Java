@@ -28,6 +28,7 @@
         android:appCategory="game"
         android:hasFragileUserData="true"
         android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true"
         android:isGame="true"
         android:label="@string/app_short_name"
         android:process=":launcher"
