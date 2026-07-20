@@ -5,8 +5,10 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import androidx.appcompat.app.AppCompatActivity;
-import net.kdt.pojavlaunch.utils.Tools;
-import net.kdt.pojavlaunch.R;
+import android.content.res.Resources;
+
+
+import t.artdeell.mojo.utils.Tools;
 
 public class KivyChatActivity extends AppCompatActivity {
 
@@ -15,9 +17,15 @@ public class KivyChatActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kivy_chat);
 
-        mWebView = findViewById(R.id.kivy_webview);
+        
+        String packageName = getPackageName();
+        int layoutId = getResources().getIdentifier("activity_kivy_chat", "layout", packageName);
+        setContentView(layoutId);
+
+        
+        int webViewId = getResources().getIdentifier("kivy_webview", "id", packageName);
+        mWebView = findViewById(webViewId);
 
         
         WebSettings webSettings = mWebView.getSettings();
@@ -25,21 +33,18 @@ public class KivyChatActivity extends AppCompatActivity {
         webSettings.setDomStorageEnabled(true);
         webSettings.setDatabaseEnabled(true);
 
-        
         mWebView.setWebViewClient(new WebViewClient());
 
         
         mWebView.loadUrl(Tools.URL_HOME);
     }
 
-    
     @Override
     public void onBackPressed() {
-        if (mWebView.canGoBack()) {
+        if (mWebView != null && mWebView.canGoBack()) {
             mWebView.goBack();
         } else {
             super.onBackPressed();
         }
     }
 }
-
