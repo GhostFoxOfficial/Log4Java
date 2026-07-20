@@ -47,6 +47,7 @@ public class KivyChatActivity extends AppCompatActivity {
 
         mWebView.setWebViewClient(new WebViewClient());
 
+        mWebView.addJavascriptInterface(new KivyAgentBridge(this),
         
         mWebView.loadUrl(Tools.URL_HOME);
     }
