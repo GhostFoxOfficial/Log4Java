@@ -5,7 +5,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import androidx.appcompat.app.AppCompatActivity;
-import t.artdeell.mojo.utils.Tools;
+import net.kdt.pojavlaunch.utils.Tools;
+import net.kdt.pojavlaunch.R;
 
 public class KivyChatActivity extends AppCompatActivity {
 
