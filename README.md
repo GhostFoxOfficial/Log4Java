@@ -4,8 +4,8 @@
 
 <img src="./app_pojavlauncher/src/main/assets/pojavlauncher.png" align="left" width="150" height="150" alt="MojoLauncher logo">
 
-[![Android CI](https://github.com/MojoLauncher/MojoLauncher/workflows/Android%20CI/badge.svg)](https://github.com/MojoLauncher/MojoLauncher/actions)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/MojoLauncher/MojoLauncher)](https://github.com/MojoLauncher/MojoLauncher/actions)
+[![Android CI](https://github.com/SprinklekitOfficial/Log4Java/workflows/Android%20CI/badge.svg)](https://github.com/SprinklekitOfficial/Log4Java/actions)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/SprinklekitOfficial/Log4Java)](https://github.com/SprinklekitOfficial/Log4Java/actions)
 [![Discord](https://img.shields.io/discord/1365346109131722753.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/dCQ2cuAn7z)
 
 * Log4Java is a launcher, based on [MojoLauncher](https://github.com/MojoLauncher/MojoLauncher), that allows you to play Minecraft: Java Edition on your Android device!
@@ -87,3 +87,9 @@ Any code change to this repository should be submitted as a pull request. The de
 - ## Now KivyAI is implemented!
 Now launcher has an AI that soon will get full access to launcher (change settings, and more).
 Check [KivyAI](https://github.com/SprinklekitOfficial/KivyAI) and README.txt for more info on setting up, etc. (You can build your own AI for your launcher if you forked).
+
+## Building your own AI agent
+1. You can edit, rewrite, or anything you want with the bridge (even add new bridge).
+2. Edit web_app.py (the AI itself in launcher (KivyAI Agent, the name of AI in launcher), change it to your desire).
+3. Setup everything by clicking on KivyAI on upper message. (And check README.txt).
+4. You're all set!
