@@ -41,13 +41,15 @@ public class KivyAgentBridge {
 
             switch (action) {
                 case "SET_USER":
-                    
+                    net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_USERNAME = value;
                     showNotice("Kivy: Player name has been changed to " + value);
                     break;
 
                 case "SET_RAM":
                     int ramMb = Integer.parseInt(value);
-                    
+                    int ramMb = Integer.parseInt(value);
+    android.content.SharedPreferences prefs = androidx.preference.PreferenceManager.getDefaultSharedPreferences(mContext);
+    prefs.edit().putInt("channel_ram", ramMb).apply();
                     showNotice("Kivy: Changed RAM to " + ramMb + " MB");
                     break;
 
@@ -57,9 +59,18 @@ public class KivyAgentBridge {
                     break;
 
                 case "CLEAN_CACHE":
-                    
-                    showNotice("Kivy: Launcher cache has been cleaned!");
-                    break;
+    try {
+        java.io.File cacheDir = mContext.getCacheDir();
+        if (cacheDir != null && cacheDir.isDirectory()) {
+            for (java.io.File file : cacheDir.listFiles()) {
+                file.delete();
+            }
+        }
+        showNotice("Kivy: Launcher cache has been cleaned!");
+    } catch (Exception e) {
+        showNotice("Kivy: Failed to clean cache: " + e.getMessage());
+    }
+    break;
 
                 case "SET_JAVA_ARGS":
                     
@@ -67,10 +78,12 @@ public class KivyAgentBridge {
                     break;
 
                 case "SET_SCALE":
-                    int scale = Integer.parseInt(value);
-                    
-                    showNotice("Kivy: Screen resolution has been changed to" + scale + "%");
-                    break;
+    int scale = Integer.parseInt(value);
+    android.content.SharedPreferences scalePrefs = androidx.preference.PreferenceManager.getDefaultSharedPreferences(mContext);
+    scalePrefs.edit().putInt("scale_factor", scale).apply();
+    
+    showNotice("Kivy: Screen resolution has been changed to " + scale + "%");
+    break;
 
                 case "OPEN_MODS":
                     
