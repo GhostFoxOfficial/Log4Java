@@ -86,7 +86,7 @@ Any code change to this repository should be submitted as a pull request. The de
 
 - ## Now KivyAI is implemented!
 Now launcher has an AI that soon will get full access to launcher (change settings, and more).
-Check [KivyAI](https://github.com/SprinklekitOfficial/KivyAI) and README.txt for more info on setting up, etc. (You can build your own AI for your launcher if you forked).
+Check [KivyAI](https://github.com/MutantBloodcell/KivyAI) and README.txt for more info on setting up, etc. (You can build your own AI for your launcher if you forked).
 
 ## Building your own AI agent
 1. You can edit, rewrite, or anything you want with the bridge (even add new bridge).
