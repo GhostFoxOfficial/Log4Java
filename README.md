@@ -4,8 +4,8 @@
 
 <img src="./app_pojavlauncher/src/main/assets/pojavlauncher.png" align="left" width="150" height="150" alt="MojoLauncher logo">
 
-[![Android CI](https://github.com/SprinklekitOfficial/Log4Java/workflows/Android%20CI/badge.svg)](https://github.com/SprinklekitOfficial/Log4Java/actions)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/SprinklekitOfficial/Log4Java)](https://github.com/SprinklekitOfficial/Log4Java/actions)
+[![Android CI](https://github.com/MutantBloodcell/Log4Java/workflows/Android%20CI/badge.svg)](https://github.com/MutantBloodcell/Log4Java/actions)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/MutantBloodcell/Log4Java)](https://github.com/MutantBloodcell/Log4Java/actions)
 [![Discord](https://img.shields.io/discord/1365346109131722753.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/dCQ2cuAn7z)
 
 * Log4Java is a launcher, based on [MojoLauncher](https://github.com/MojoLauncher/MojoLauncher), that allows you to play Minecraft: Java Edition on your Android device!
@@ -30,9 +30,9 @@
 
 You can get Log4Java via four methods:
 
-1. You can get the prebuilt app from the [releases section](http://github.com/SprinklekitOfficial/Log4Java/releases).
+1. You can get the prebuilt app from the [releases section](http://github.com/MutantBloodcell/Log4Java/releases).
 
-2. You can get early builds from [Github Actions](http://github.com/SprinklekitOfficial/Log4Java/actions).
+2. You can get early builds from [Github Actions](http://github.com/MutantBloodcell/Log4Java/actions).
 
 4. You can [build](#building) from source.
 ## Building   
