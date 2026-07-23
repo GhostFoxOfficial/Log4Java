@@ -80,7 +80,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "git.sprinklekit.log4java"
+        applicationId "git.mutantbloodcell.log4java"
         minSdkVersion 21
         targetSdkVersion 36
         versionCode getDateSeconds()
