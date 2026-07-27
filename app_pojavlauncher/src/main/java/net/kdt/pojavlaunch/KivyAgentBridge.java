@@ -131,4 +131,4 @@ public class KivyAgentBridge {
     private void showNotice(String text) {
         android.widget.Toast.makeText(mContext, text, android.widget.Toast.LENGTH_SHORT).show();
             }
-    
+}
