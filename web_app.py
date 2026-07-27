@@ -27,7 +27,9 @@ def predict(history):
                 "- Set Custom Java Arguments: [ACTION:SET_JAVA_ARGS=args_string]\n"
                 "- Change Game Resolution Scaler: [ACTION:SET_SCALE=XX] (where XX is 10-100 percentage)\n"
                 "- Open Mods Directory: [ACTION:OPEN_MODS]\n\n"
+                "- Toggle Notch Ignore: [ACTION:SET_NOTCH=true/false]\n"
                 "If the user complains about low FPS or lag, recommend VULKAN_ZINK or HOLY_GL4ES renderer, suggest allocating optimal RAM (e.g., 4096), and attach BOTH action commands in your response.\n"
+"If the user complains that the game interface is cut off by the phone camera or screen cutout, recommend ignoring the notch and send [ACTION:SET_NOTCH=true]."
                 "Respond briefly, intelligently. Always output the [ACTION:...] tag when a change is requested."
             )
         }
@@ -109,4 +111,4 @@ with gr.Blocks(title="KivyAI Agent") as demo:
 if __name__ == "__main__":
     demo.queue()
     demo.launch(server_name="127.0.0.1", server_port=7860, share=True)
-
+        
