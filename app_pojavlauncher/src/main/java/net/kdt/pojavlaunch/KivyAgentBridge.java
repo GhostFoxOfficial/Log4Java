@@ -14,70 +14,59 @@ public class KivyAgentBridge {
         this.mContext = context;
     }
 
-    @JavascriptInterface
+        @JavascriptInterface
     public void receiveAiResponse(String fullMessage) {
-        
-        if (fullMessage.contains("[ACTION:")) {
-            int lastIndex = 0;
-            
-            while ((lastIndex = fullMessage.indexOf("[ACTION:", lastIndex)) != -1) {
-                int endIndex = fullMessage.indexOf("]", lastIndex);
-                if (endIndex == -1) break;
-                
-                final String commandData = fullMessage.substring(lastIndex + 8, endIndex);
-                lastIndex = endIndex + 1;
+        if (fullMessage == null || !fullMessage.contains("[ACTION:")) return;
 
-                
-                new Handler(Looper.getMainLooper()).post(() -> executeSystemAction(commandData));
-            }
+        int searchIndex = 0;
+        while (true) {
+            int startIndex = fullMessage.indexOf("[ACTION:", searchIndex);
+            if (startIndex == -1) break;
+
+            int endIndex = fullMessage.indexOf("]", startIndex);
+            if (endIndex == -1) break;
+
+            final String commandData = fullMessage.substring(startIndex + 8, endIndex);
+            searchIndex = endIndex + 1;
+
+            new android.os.Handler(android.os.Looper.getMainLooper()).post(() -> executeSystemAction(commandData));
         }
     }
 
-    private void executeSystemAction(String commandData) {
+    private void executeSystemAction(String actionData) {
         try {
-            String[] parts = commandData.split("=", 2);
-            String action = parts[0];
-            String value = parts.length > 1 ? parts[1] : "";
+            if (actionData == null || !actionData.contains("=")) return;
 
-                        switch (action) {
+            String[] parts = actionData.split("=", 2);
+            String action = parts[0].trim();
+            String value = parts[1].trim();
+
+            switch (action) {
                 case "SET_USER":
-                    
                     net.kdt.pojavlaunch.prefs.LauncherPreferences.DEFAULT_PREF.edit()
                         .putString("username", value)
                         .apply();
-                    
-                    
-                    net.kdt.pojavlaunch.prefs.LauncherPreferences.loadPreferences(mContext);
-                    
-                    showNotice("Kivy: Player name has been changed to " + value);
+                    showNotice("Kivy: Nickname changed to " + value);
                     break;
 
                 case "SET_RAM":
-                    int ramMb = Integer.parseInt(value);
-                    
+                    int ramValue = Integer.parseInt(value);
                     net.kdt.pojavlaunch.prefs.LauncherPreferences.DEFAULT_PREF.edit()
-                        .putInt("ramAllocation", ramMb)
+                        .putInt("allocation", ramValue)
                         .apply();
-                    
-                    net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_RAM_ALLOCATION = ramMb;
-                    
-                    showNotice("Kivy: Changed RAM to " + ramMb + " MB");
+                    showNotice("Kivy: Allocated RAM set to " + ramValue + "MB");
                     break;
 
                 case "SET_RENDERER":
-                    
                     String rendererValue = value.toLowerCase();
                     net.kdt.pojavlaunch.prefs.LauncherPreferences.DEFAULT_PREF.edit()
                         .putString("renderer", rendererValue)
                         .apply();
-                        
                     net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_RENDERER = rendererValue;
-                    
                     showNotice("Kivy: Graphical renderer changed to " + value);
                     break;
 
                 case "CLEAN_CACHE":
-                    
                     try {
                         java.io.File cacheDir = mContext.getCacheDir();
                         if (cacheDir != null && cacheDir.isDirectory()) {
@@ -92,66 +81,54 @@ public class KivyAgentBridge {
                     break;
 
                 case "SET_JAVA_ARGS":
-                    
                     net.kdt.pojavlaunch.prefs.LauncherPreferences.DEFAULT_PREF.edit()
                         .putString("customJavaArgs", value)
                         .apply();
-                        
                     net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_CUSTOM_JAVA_ARGS = value;
-                    
                     showNotice("Kivy: New Java arguments has been set!");
                     break;
 
                 case "SET_SCALE":
-                    
-                    
                     float scaleFactor = Integer.parseInt(value) / 100.0f;
                     net.kdt.pojavlaunch.prefs.LauncherPreferences.DEFAULT_PREF.edit()
                         .putFloat("scaleFactor", scaleFactor)
                         .apply();
-                        
                     net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_SCALE_FACTOR = scaleFactor;
-                    
                     showNotice("Kivy: Screen resolution has been changed to " + value + "%");
                     break;
 
                 case "OPEN_MODS":
-                    
                     try {
                         android.content.Intent intent = new android.content.Intent(android.content.Intent.ACTION_VIEW);
-                        
                         java.io.File modsDir = new java.io.File(mContext.getFilesDir(), "minecraft/mods");
                         if (!modsDir.exists()) modsDir.mkdirs();
-                        
+
                         android.net.Uri uri = androidx.core.content.FileProvider.getUriForFile(
                             mContext, mContext.getPackageName() + ".provider", modsDir
                         );
                         intent.setDataAndType(uri, "resource/folder");
                         intent.addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK | android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION);
                         mContext.startActivity(intent);
-                            } catch (Exception e) {
-            showNotice("Kivy: Opening folder with mods...");
-        }
-        break;
+                    } catch (Exception e) {
+                        showNotice("Kivy: Opening folder with mods...");
+                    }
+                    break;
 
-              case "SET_NOTCH":
-        boolean ignoreNotch = Boolean.parseBoolean(value);
-
-        net.kdt.pojavlaunch.prefs.LauncherPreferences.DEFAULT_PREF.edit()
-            .putBoolean("ignoreNotch", ignoreNotch)
-            .apply();
-
-        net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_IGNORE_NOTCH = ignoreNotch;
-
-        showNotice("Kivy: Ignore screen notch set to " + ignoreNotch);
-        break;
-                        
+                case "SET_NOTCH":
+                    boolean ignoreNotch = Boolean.parseBoolean(value);
+                    net.kdt.pojavlaunch.prefs.LauncherPreferences.DEFAULT_PREF.edit()
+                        .putBoolean("ignoreNotch", ignoreNotch)
+                        .apply();
+                    net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_IGNORE_NOTCH = ignoreNotch;
+                    showNotice("Kivy: Ignore screen notch set to " + ignoreNotch);
+                    break;
+            }
         } catch (Exception e) {
-            Toast.makeText(mContext, "Kivy Agent Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+            android.widget.Toast.makeText(mContext, "Kivy Agent Error: " + e.getMessage(), android.widget.Toast.LENGTH_LONG).show();
         }
+    }
 
     private void showNotice(String text) {
-        Toast.makeText(mContext, text, Toast.LENGTH_SHORT).show();
-    }
-                           }
-
+        android.widget.Toast.makeText(mContext, text, android.widget.Toast.LENGTH_SHORT).show();
+            }
+    
