@@ -129,15 +129,26 @@ public class KivyAgentBridge {
                         intent.setDataAndType(uri, "resource/folder");
                         intent.addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK | android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION);
                         mContext.startActivity(intent);
-                    } catch (Exception e) {
-                        showNotice("Kivy: Opening folder with mods...");
-                    }
-                    break;
-                        }
+                            } catch (Exception e) {
+            showNotice("Kivy: Opening folder with mods...");
+        }
+        break;
+
+              case "SET_NOTCH":
+        boolean ignoreNotch = Boolean.parseBoolean(value);
+
+        net.kdt.pojavlaunch.prefs.LauncherPreferences.DEFAULT_PREF.edit()
+            .putBoolean("ignoreNotch", ignoreNotch)
+            .apply();
+
+        net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_IGNORE_NOTCH = ignoreNotch;
+
+        showNotice("Kivy: Ignore screen notch set to " + ignoreNotch);
+        break;
+                        
         } catch (Exception e) {
             Toast.makeText(mContext, "Kivy Agent Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
         }
-    }
 
     private void showNotice(String text) {
         Toast.makeText(mContext, text, Toast.LENGTH_SHORT).show();
