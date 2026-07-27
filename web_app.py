@@ -24,7 +24,7 @@ def predict(message, history):
                     "- Set Custom Java Arguments: [ACTION:SET_JAVA_ARGS=args_string]\n"
                     "- Change Game Resolution Scaler: [ACTION:SET_SCALE=XX] (where XX is 10-100 percentage)\n"
                     "- Open Mods Directory: [ACTION:OPEN_MODS]\n\n"
-                    "If the user complains about low FPS or lag, recommend VULKAN_ZINK or HOLY_GL4ES renderer, suggest allocating optimal RAM (e.g., 4096), and attach BOTH action commands in your response.\n"
+                    "If the user complains about low FPS or lag, recommend VULKAN_ZINK or HOLY_GL4ES renderer, suggest allocating optimal RAM (e.g., 4096), and attach BOTH action commands in your response (but DO NOT repeat same messages, respond to user's last messages).\n"
                     "Respond briefly, intelligently. Always output the [ACTION:...] tag when a change is requested."
                 )
             },
@@ -58,15 +58,15 @@ def predict(message, history):
             yield history + [{"role": "assistant", "content": f"Server error code: {response.status_code}"}]
             
     except requests.exceptions.Timeout:
-        yield history + [{"role": "assistant", "content": "Error: Kivy is taking too long to think. Give your CPU a moment."}]
+        yield history + [{"role": "assistant", "content": "Error: KivyAI Agent is taking too long to think. Give your CPU a moment."}]
     except requests.exceptions.ConnectionError:
-        yield history + [{"role": "assistant", "content": "Error: Connection refused by local AI server."}]
+        yield history + [{"role": "assistant", "content": "Error: Connection refused by AI server."}]
 
 
-with gr.Blocks(title="KivyAI") as demo:
-    gr.Markdown("# 🚀 KivyAI")
+with gr.Blocks(title="KivyAI Agent") as demo:
+    gr.Markdown("# 🚀 KivyAI Agent")
     
-    chatbot = gr.Chatbot(label="KivyAI Chat")
+    chatbot = gr.Chatbot(label="KivyAI Agent Chat")
     msg_input = gr.Textbox(placeholder="Ask Kivy anything...", label="Your Message")
     clear_btn = gr.Button("🗑️ Clear Chat")
 
@@ -103,4 +103,3 @@ with gr.Blocks(title="KivyAI") as demo:
 if __name__ == "__main__":
     demo.queue()
     demo.launch(server_name="127.0.0.1", server_port=7860, share=True)
-
