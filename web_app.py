@@ -24,7 +24,7 @@ def predict(message, history):
                     "- Set Custom Java Arguments: [ACTION:SET_JAVA_ARGS=args_string]\n"
                     "- Change Game Resolution Scaler: [ACTION:SET_SCALE=XX] (where XX is 10-100 percentage)\n"
                     "- Open Mods Directory: [ACTION:OPEN_MODS]\n\n"
-                    "If the user complains about low FPS or lag, recommend VULKAN_ZINK or HOLY_GL4ES renderer, suggest allocating optimal RAM (e.g., 4096), and attach BOTH action commands in your response (but DO NOT repeat same messages, respond to user's last messages).\n"
+                    "If the user complains about low FPS or lag, recommend VULKAN_ZINK or HOLY_GL4ES renderer, suggest allocating optimal RAM (e.g., 4096), and attach BOTH action commands in your response.\n"
                     "Respond briefly, intelligently. Always output the [ACTION:...] tag when a change is requested."
                 )
             },
