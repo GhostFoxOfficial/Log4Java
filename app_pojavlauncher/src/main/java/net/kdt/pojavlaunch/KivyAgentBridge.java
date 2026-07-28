@@ -51,10 +51,10 @@ public class KivyAgentBridge {
 
                 case "SET_RAM":
                     int ramValue = Integer.parseInt(value);
-                    net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_RAM_ALLOCATION.edit()
+                    net.kdt.pojavlaunch.prefs.LauncherPreferences.DEFAULT_PREF.edit()
                         .putInt("allocation", ramValue)
                         .apply();
-                    showNotice("Kivy: Allocated RAM set to " + ramValue + "MB");
+                    showNotice("Kivy: Allocated RAM set to " + ramValue + " MB");
                     break;
 
                 case "SET_RENDERER":
