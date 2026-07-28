@@ -4,8 +4,8 @@
 
 <img src="./app_pojavlauncher/src/main/assets/pojavlauncher.png" align="left" width="150" height="150" alt="MojoLauncher logo">
 
-[![Android CI](https://github.com/SprinklekitOfficial/Log4Java/workflows/Android%20CI/badge.svg)](https://github.com/SprinklekitOfficial/Log4Java/actions)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/MojoLauncher/MojoLauncher)](https://github.com/SprinklekitOfficial/Log4Java/actions)
+[![Android CI](https://github.com/MutantBloodcell/Log4Java/workflows/Android%20CI/badge.svg)](https://github.com/MutantBloodcell/Log4Java/actions)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/MutantBloodcell/Log4Java)](https://github.com/MutantBloodcell/Log4Java/actions)
 [![Discord](https://img.shields.io/discord/1365346109131722753.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/VHdwQFsaGX)
 
 * Log4Java это лаунчер, основанный на [MojoLauncher](https://github.com/MojoLauncher/MojoLauncher), позволяющий играть в Minecraft: Java Edition на устройствах Android!
@@ -30,9 +30,9 @@
 
 Получить копию Log4Java можно четырьмя способами:
 
-1. Можно скачать готовый билд с раздела [релизов](http://github.com/SprinklekitOfficial/Log4Java/releases).
+1. Можно скачать готовый билд с раздела [релизов](http://github.com/MutantBloodcell/Log4Java/releases).
 
-2. Можно скачать с ранние билды с [Github Actions](http://github.com/mojolauncher/mojolauncher/actions).
+2. Можно скачать с ранние билды с [Github Actions](http://github.com/MutantBloodcell/Log4Java/actions).
 
 4. Можно [собрать](#building) с исходного кода.
 ## Сборка  
@@ -83,3 +83,10 @@
 - [alsoft](https://github.com/kcat/openal-soft/) (Библиотека вывода звука): [GNU LIBRARY GENERAL PUBLIC LICENSE](https://github.com/kcat/openal-soft/blob/master/COPYING) и [modified PFFFT](https://github.com/kcat/openal-soft/blob/master/LICENSE-pffft).
 - [oboe](https://github.com/google/oboe): [Apache License 2.0](https://github.com/google/oboe/blob/main/LICENSE).
 - Отдельная благодарность к [Mineskin](https://mineskin.eu/) за предоставление аватаров Minecraft.
+
+## Теперь есть ИИ!
+Для того чтобы сделать своего собственного ИИ агента, вот вся инструкция:
+1. Скачайте или редактируйте файл web_app.py в вашем форке.
+2. Изменяйте там что хотите.
+3. Также имеются несколько файлов которые вы можете посмотреть в xml и java папках, их тоже можно менять.
+4. Готово!
