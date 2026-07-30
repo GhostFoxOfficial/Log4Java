@@ -96,7 +96,7 @@
     <string name="control_listplayers">TAB</string>
     <string name="control_mouse">МЫШЬ</string>
     <string name="control_mouseoff">МЫШЬ: ВЫКЛ</string>
-    <string name="control_mouseon">Мышь: ВКЛ </string>
+    <string name="control_mouseon">МЫШЬ: ВКЛ </string>
     <!-- MainActivity: Menu advanced controls -->
     <string name="control_forceclose">Завершить процесс</string>
     <string name="control_viewout">Журнал</string>
