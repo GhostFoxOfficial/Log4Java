@@ -51,7 +51,7 @@ def predict(history):
     headers = {"Content-Type": "application/json"}
     
     try:
-        response = requests.post(OLLAMA_URL, json=payload, headers=headers, timeout=120, stream=True)
+        response = requests.post(OLLAMA_URL, json=payload, headers=headers, timeout=200, stream=True)
         
         if response.status_code == 200:
             partial_text = ""
