@@ -90,6 +90,6 @@ Check [KivyAI](https://github.com/MutantBloodcell/KivyAI) and README.txt for mor
 
 ## Building your own AI agent
 1. You can edit, rewrite, or anything you want with the bridge (even add new bridge).
-2. Edit web_app.py (the AI itself in launcher (KivyAI Agent, the name of AI in launcher), change it to your desire, you can rewrite).
+2. Edit web_app.py (the AI itself in launcher (KivyAI Agent, the name of AI in launcher), change it to your desire, you can rewrite if you wanna build from scratch).
 3. Setup everything by clicking on KivyAI on upper message. (And check README.txt).
 4. You're all set!
