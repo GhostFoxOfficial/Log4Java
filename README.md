@@ -46,12 +46,12 @@ You can get Log4Java via four methods:
 - [x] Instance system in favor of profiles
 - [x] Out-of-the box 1.21.5 support
 - [x] mrpack/CurseForge zip import
-- [ ] LTW: resolve issues with Create
-- [ ] LTW: enable compute shader/image extensions
-- [ ] LTW: switch to a color-renderable format for framebuffers
-- [ ] Modpack/mod management tool
-- [ ] MMC-compatible instance import
-- [ ] Implement common native library standard
+- [x] LTW: resolve issues with Create
+- [x] LTW: enable compute shader/image extensions
+- [x] LTW: switch to a color-renderable format for framebuffers
+- [x] Modpack/mod management tool
+- [x] MMC-compatible instance import
+- [x] Implement common native library standard
 
 ## Known Issues
 - Some physical mice may have very slow mouse speed
