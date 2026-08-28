@@ -1,6 +1,6 @@
 <H1 align="center">Log4Java</H1>
 
-<a href="./README.md">Readme in English</a>
+<a href="./README.md">README in English</a>
 
 <img src="./app_pojavlauncher/src/main/assets/pojavlauncher.png" align="left" width="150" height="150" alt="MojoLauncher logo">
 
@@ -46,12 +46,12 @@
 - [x] Система инстансов на замену профилям версий
 - [x] Поддержка 1.21.5 "из коробки"
 - [x] Импорт mrpack/CurseForge zip
-- [ ] LTW: исправить проблемы с Create
-- [ ] LTW: добавить поддержку Compute расширений
-- [ ] LTW: использовать форматы с поддержкой Color Attachment для объектов фреймбуфера (FBO)
-- [ ] Менеджер модов/модпаков
-- [ ] Импорт инстансов формата MultiMC
-- [ ] Реализовать общий стандарт библиотек
+- [x] LTW: исправить проблемы с Create
+- [x] LTW: добавить поддержку Compute расширений
+- [x] LTW: использовать форматы с поддержкой Color Attachment для объектов фреймбуфера (FBO)
+- [x] Менеджер модов/модпаков
+- [x] Импорт инстансов формата MultiMC
+- [x] Реализовать общий стандарт библиотек
 
 ## Известные проблемы
 - Некоторые физические мышки могут иметь низкую скорость курсора
