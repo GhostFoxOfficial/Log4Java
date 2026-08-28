@@ -1,6 +1,6 @@
 <H1 align="center">Log4Java</H1>
 
-<a href="./README_RU.md">Readme на русском</a>
+<a href="./README_RU.md">README на русском</a>
 
 <img src="./app_pojavlauncher/src/main/assets/pojavlauncher.png" align="left" width="150" height="150" alt="MojoLauncher logo">
 
