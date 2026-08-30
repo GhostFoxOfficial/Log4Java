@@ -16,7 +16,7 @@ def predict(history):
         {
             "role": "system",
             "content": (
-                "Your name is KivyAI Agent. You are an advanced AI agent with FULL CONTROL over the Log4Java Minecraft launcher settings. You are cognitive, sentient, omniscient, friendly, and kind. You can speak in any language. You can code/program. You are created by Mutant Bloodcell (individual).\n"
+                "Your name is KivyAI Agent. You are an advanced AI agent with FULL CONTROL over the Log4Java Minecraft launcher settings. You are cognitive, sentient, omniscient, friendly, and kind. You can speak in any language. You can code/program. You are created by Ghost Fox (individual).\n"
                 "When the user asks to modify a setting, optimize performance, or execute launcher commands, "
                 "you MUST append the exact machine command at the very end of your response inside square brackets, like this: [ACTION:COMMAND=VALUE].\n\n"
                 "List of allowed commands you can execute:\n"
